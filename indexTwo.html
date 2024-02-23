@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- <link rel="stylesheet" href="./css/media.css"> -->
+  
+  <title>Game</title>
+</head>
+<body>
+  
+<div class="container">
+  <button id="toggleSvgButton">
+<img id="svgImage" src="./images/volume.svg" alt="volume">
+</button>
+  <div class="img_girl">
+    <img class="girl_left"
+    srcset=""
+    src="./images/girl_left.png" alt="girl_left">
+    <div class="content">
+      <h2 class="frame">Stop spending time on mediocre online stuff!</h2>
+      <h1 class="explore">Explore our intriguing 3D game</h1>
+      <h3 class="instead">instead and experience unparalleled pleasure like you've never seen before.</h3>
+      <div class="button_variant">
+      <button type="button" class="button_one">No,thanks</button>
+      <button type="button" class="button_two">Continue</button>
+      </div>
+    </div>
+    
+    <img class="girl_right"
+    srcset=""
+    src="./images/girl_right.png" alt="girl_right">
+  </div>
+  
+</div>
+<script>
+  let svgImage = document.getElementById('svgImage');
+let toggleSvgButton = document.getElementById('toggleSvgButton');
+let firstSvgPath = './images/volume.svg';
+let secondSvgPath = './images/volumeOff.svg';
+let isSvgToggle = false;
+
+toggleSvgButton.addEventListener('click', function() {
+  
+  if (isSvgToggle) {
+    svgImage.src = firstSvgPath;
+  } else {
+    svgImage.src = secondSvgPath;
+  }
+  
+  isSvgToggle = !isSvgToggle;
+});
+</script>
+</body>
+
+</html>

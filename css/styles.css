@@ -6,7 +6,9 @@ body {
 }
 @font-face {
   font-family:Nirmala ui;
-  src: url(../fonts/Nirmala\ ui.ttf);
+  src: url(../fonts/nirmala-ui-bold_2.ttf);
+  /* font-family:Nirmala ui;
+  src: url(../fonts/Nirmala-ui.ttf); */
 }
 
 .container {
@@ -17,28 +19,33 @@ body {
   
 }
 
-.img_girl {
-  
+.all {
   display: flex;
-  justify-content: space-between;
-  /* align-items: baseline; */
+}
+.img_girl {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: baseline;
 }
 
 .girl_left {
-  margin: 174px 0px 0px 70px;
+  padding: 70px 0px 0px 70px; 
 }
 
 .girl_right {
-  margin: 237px 22px 0px 0px ;
-  /* margin-top: 237px;
-  margin-right: 22px  */
-  
+padding-left: 636px;
 }
 .content {
-  position: absolute;
-  margin-left: 410px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  padding: 91px 0px 0px 410px;
 }
+
 .frame {
+  margin: 0px;
   border: 1px solid #FFFFFF;
   display: flex;
   align-items: center;
@@ -46,32 +53,33 @@ body {
   backdrop-filter: blur(10px);
   width: 779px;
   height: 68px;
-  margin-top: 191px;
-  margin-left: 160px;
   border-radius: 40px;
   background-color: rgb(255 255 255 / 20%);
   font-size: 36px;
   color: #FFFFFF;
+  font-weight: 300;
+  font-family: '../fonts/Nirmala-ui.ttf', sans-serif;
 }
 
 .explore {
-  margin: 0;  
+  padding-top: 20px;
+  margin: 0;
   width: 1100px;
   font-weight: 700;
   font-size: 84px;
   line-height: 100.8px;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 0 80px #fff;
   background: linear-gradient(to right, #EB5D38, #FFD600);
   -webkit-background-clip: text;
   color: transparent;
   
-  -webkit-text-stroke: 0.1px #FFFFFF;
+  -webkit-text-stroke: 2px #FFFFFF;
 }
 
 .instead {
-  margin: 40px 0 0 0 ;
+  padding-top: 40px;
+  margin: 0;
   width: 1100px;
   color: #FFF2CE;
   text-transform: uppercase;
@@ -83,7 +91,7 @@ body {
 
 .button_variant {
   display: flex;
-  margin: 80px 0px 0px 202px;
+  padding-top: 90px;
 }
 
   .button_one {
@@ -95,7 +103,7 @@ body {
   text-transform: uppercase;
   background: transparent;
   height: 84px;
-  font-family: 'Roboto', sans-serif;
+  
   cursor: pointer;
   color: #FFFFFF;
 }
@@ -121,48 +129,49 @@ body {
   background: transparent;
   margin-left: 50px;
   height: 84px;
-  font-family: 'Roboto', sans-serif;
+  
   cursor: pointer;
   color: #FFFFFF;
+  background: linear-gradient(40deg, #FFE53B, #FF2525);
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.6);
 }
 
 .button_two:hover {
   /* backdrop-filter: blur(20px); */
   border: none;
   background-color: rgba(56, 55, 55, 0.94);
-  box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+  /* box-shadow: 0px 0px 10px 2px rgb(0, 0, 0); */
   background: linear-gradient(40deg, #FFE53B, #FF2525);
-
+  box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
 }
 
 #toggleSvgButton {
   background: url(../images/volume.svg);
-  position: absolute;
   border: none;
   background: transparent;
-  margin: 48px 869px 74px 1794px ;
   cursor: pointer;
+  padding: 49px 74px 0px 1794px;
 }
 
 .img_girl_Two {
-  
+  position: absolute;
+  z-index: 0;
   display: flex;
-  justify-content: space-between;
-  /* align-items: baseline; */
+  align-items: baseline;
 }
 
 
 .girl_left_Two {
-  margin: 157px 0px 0px 39px;
+  padding: 52px 0px 0px 39px;
 }
 
 .girl_right_Two {
-  margin: 157px 27px 0px 0px;
+  padding: 0px 0px 0px 764px;
 }
 
 .content_Two {
-  position: absolute;
-  margin: 257px 0px 0px 568px;
+  z-index: 1;
+  padding: 157px 0px 0px 568px;
 }
 
 .warning {
@@ -173,21 +182,22 @@ font-size: 120px;
 line-height: 120px;
 text-align: center;
 text-transform: uppercase;
-text-shadow: 0 0 80px #fff;
 background: linear-gradient(to right, #EB5D38, #FFD600);
 -webkit-background-clip: text;
 color: transparent;
--webkit-text-stroke: 0.1px #FFFFFF;
+-webkit-text-stroke: 2px #FFFFFF;
 }
 
 .you_must {
+  padding-top: 40px;
   font-weight: 400;
   width: 785px;
   color: #FFFFFF;
   text-align: center;
   font-size: 32px;
   line-height: 44.8px;
-  margin: 40px 0px 0px 0px;
+  margin: 0;
+  font-family: '../fonts/Nirmala-ui.ttf', sans-serif;
 }
 
 .button_two_continue {
@@ -197,7 +207,6 @@ color: transparent;
   /* border: 2px solid #FFFFFF; */
   font-size: 32px;
   text-transform: uppercase;
-  margin: 120px 0px 0px 167px;
   height: 84px;
   cursor: pointer;
   color: #FFFFFF;
@@ -205,9 +214,28 @@ color: transparent;
   /* background-color: rgba(56, 55, 55, 0.94); */
   box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
   background: linear-gradient(40deg, #FFE53B, #FF2525);
+}
 
+.style_button {
+  padding: 120px 0px 0px 161px;
 }
 
 .button_two_continue:hover {
   box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.who {
+  width: 1310px;
+  font-size: 64px;
+  
+}
+
+.center {
+  display: flex;
 }

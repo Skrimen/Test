@@ -144,6 +144,70 @@ body {
   cursor: pointer;
 }
 
+.img_girl_Two {
+  
+  display: flex;
+  justify-content: space-between;
+  /* align-items: baseline; */
+}
 
 
+.girl_left_Two {
+  margin: 157px 0px 0px 39px;
+}
 
+.girl_right_Two {
+  margin: 157px 27px 0px 0px;
+}
+
+.content_Two {
+  position: absolute;
+  margin: 257px 0px 0px 568px;
+}
+
+.warning {
+margin: 0;
+width: 785px;
+font-weight: 700;
+font-size: 120px;
+line-height: 120px;
+text-align: center;
+text-transform: uppercase;
+text-shadow: 0 0 80px #fff;
+background: linear-gradient(to right, #EB5D38, #FFD600);
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-stroke: 0.1px #FFFFFF;
+}
+
+.you_must {
+  font-weight: 400;
+  width: 785px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 32px;
+  line-height: 44.8px;
+  margin: 40px 0px 0px 0px;
+}
+
+.button_two_continue {
+  font-weight: 700;
+  border-radius: 10px;
+  width: 463px;
+  /* border: 2px solid #FFFFFF; */
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 120px 0px 0px 167px;
+  height: 84px;
+  cursor: pointer;
+  color: #FFFFFF;
+  border: none;
+  /* background-color: rgba(56, 55, 55, 0.94); */
+  box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+  background: linear-gradient(40deg, #FFE53B, #FF2525);
+
+}
+
+.button_two_continue:hover {
+  box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+}

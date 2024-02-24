@@ -17,23 +17,34 @@
   
 <div class="container">
   <div class="header">
-    <div></div>
-  <h1 class="explore who">Who Would You Choose as Your First Partner, if you play right now?</h1>
-  <button id="toggleSvgButton">
+  <h1 class="who">Who Would You Choose as Your First Partner, if you play right now?</h1>
+  <button id="toggleSvgButtonThree">
     <img id="svgImage" src="./images/volume.svg" alt="volume">
     </button>
   </div>
   <div class="center">
+    <img class="arrow_Left"
+    srcset=""
+    src="./images/arrow_Left.png" alt="arrow_Left">
+    <img class="group_24"
+    srcset=""
+    src="./images/group_24.png" alt="group_24">
+    <img class="arrow_Right"
+    srcset=""
+    src="./images/arrow_Right.png" alt="arrow_Right">
   </div>
+  <div class="style_button_three">
+  <button type="button_Three" class="button_Three">Next</button>
+</div>
 </div>
 <script>
   let svgImage = document.getElementById('svgImage');
-let toggleSvgButton = document.getElementById('toggleSvgButton');
+let toggleSvgButtonThree = document.getElementById('toggleSvgButtonThree');
 let firstSvgPath = './images/volume.svg';
 let secondSvgPath = './images/volumeOff.svg';
 let isSvgToggle = false;
 
-toggleSvgButton.addEventListener('click', function() {
+toggleSvgButtonThree.addEventListener('click', function() {
   
   if (isSvgToggle) {
     svgImage.src = firstSvgPath;

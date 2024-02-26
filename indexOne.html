@@ -9,7 +9,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/mediaTwo.css">
+  <link rel="stylesheet" href="./css/mediaOne.css">
   
   <title>Game</title>
 </head>
@@ -17,23 +17,25 @@
   
 <div class="container">
   <button id="toggleSvgButton">
-    <img id="svgImage" src="./images/volume.svg" alt="volume">
-    </button>
-    <div class="all">
-  <div class="img_girl_Two">
-  <img class="girl_left_Two"
-    src="./images/girl_left_Two.png" alt="girl_left">
-    <img class="girl_right_Two"
-    src="./images/girl_right_Two.png" alt="girl_right">
-    <div class="girl_rightMiniTwo"></div>
+<img id="svgImage" src="./images/volume.svg" alt="volume">
+</button>
+<div class="all">
+  <div class="img_girl">
+    <img class="girl_left"
+    src="./images/girl_left.png" alt="girl_left">
+    <img class="girl_right"
+    src="./images/girl_right.png" alt="girl_right">
+    <div class="girl_rightMini"></div>
   </div>
-  <div class="content_Two">
-    <h1 class="warning">Warning</h1>
-    <h3 class="you_must">You must be at least 18 years old and comfortable with mature topics to play the game.</h3>
-    <div class="style_button">
-    <button type="button" class="button_two_continue">Ok, Continue</button>
+  <div class="content">
+    <h2 class="frame">Stop spending time on mediocre online stuff!</h2>
+    <h1 class="explore">Explore our intriguing 3D game</h1>
+    <h3 class="instead">instead and experience unparalleled pleasure like you've never seen before.</h3>
+    <div class="button_variant">
+    <button type="button" class="button_one">No,thanks</button>
+    <button type="button" class="button_two">Continue</button>
+    </div>
   </div>
-</div>
 </div>
 </div>
 <script>
@@ -42,6 +44,8 @@ let toggleSvgButton = document.getElementById('toggleSvgButton');
 let firstSvgPath = './images/volume.svg';
 let secondSvgPath = './images/volumeOff.svg';
 let isSvgToggle = false;
+
+
 
 toggleSvgButton.addEventListener('click', function() {
   

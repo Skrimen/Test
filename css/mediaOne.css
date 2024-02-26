@@ -1,0 +1,103 @@
+@media screen and (max-width: 360px) {
+  body {
+    width: 360px;
+    height: 540px;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  .container {
+    min-height: 359px;
+    background-image: url(../images/screenBodyMini.png);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 543px;
+  }
+  #toggleSvgButton {
+    /* padding: 25px 11px 10px 319px; */
+    padding: 18px 11px 10px 310px;
+    position: absolute;
+    /* padding: 0; */
+    /* transform: scale(0.5); */
+  }
+  #svgImage {
+    /* padding: 25px 11px 10px 319px; */
+    transform: scale(0.6);
+    
+  }
+  
+}
+
+@media screen and (max-width: 360px) {
+  .all {
+    min-height: 359px;
+    display: flex;
+    justify-content: center;
+  }
+  .girl_left {
+    display: none;
+  }
+  .girl_right {
+    display: none;
+  }
+  
+  .girl_rightMini {
+  background-image: url(../images/girl_rightMini.png);
+  width: 244px;
+  height: 361px;
+  margin: 181px 0px 0px 0px;
+  }
+
+  .content {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .frame {
+    width: 258px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .explore {
+    padding-top: 10px;
+    width: 308px;
+    /* height: 58px; */
+    font-size: 24px;
+    line-height: 28.8px;
+    -webkit-text-stroke: 1px #FFFFFF;
+  }
+
+  .instead {
+    width: 308px;
+    font-size: 12px;
+    line-height: 14.4px;
+    padding-top: 10px;
+    letter-spacing: 0.2em;
+  }
+
+  .button_variant {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 207px;
+  }
+
+  .button_one {
+    width: 330px;
+    height: 56px;
+    margin-top: 10px;
+    border: 1px solid #FFFFFF;
+    font-size: 24px;
+  }
+  .button_two {
+    margin: 0;
+    width: 330px;
+    height: 56px;
+    box-shadow: none;
+    font-size: 24px;
+  }
+}
+
+
